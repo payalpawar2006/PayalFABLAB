@@ -1,0 +1,81 @@
+*{
+    margin: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+h1{
+    background-color: crimson;
+}
+p{
+    background-color: rgb(240, 245, 236);
+}
+.paragraph{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+}
+#house{
+    position: absolute;
+    width: 400px;
+height: 400px;
+background-color: rgb(247, 18, 159);
+margin: 10px 20px 10px 20px;
+padding: 10px 20px 10px 20px;
+border-radius: 20px;
+border: 4px solid darkred;
+
+}
+
+
+#main{
+    position: absolute;
+    
+width: 400px;
+height: 400px;
+background-color: rgb(247, 18, 159);
+margin: 10px 20px 10px 20px;
+padding: 10px 20px 10px 20px;
+border-radius: 20px;
+border: 4px solid darkred;
+
+
+}
+.garage{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+#car1{
+    position:absolute ;
+    width: 400px;
+    height: 400px;
+     background-color: rgb(117, 238, 43);
+     border-radius: 20px;
+
+
+    
+}
+#car2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+     background-color: rgb(67, 59, 219);
+     border-radius: 20px;
+
+}
+#car3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+     background-color: rgb(247, 57, 76);
+     border-radius: 20px;
+
+}
+body{
+    background-color: blanchedalmond;
+}

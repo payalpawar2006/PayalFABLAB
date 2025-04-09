@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    *{
+    margin: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+h2{
+    background-color: rgb(250, 148, 230);
+}
+:root {
+    --primary: #084887;
+    --secondary: #F58A07;
+    --accent: #F9AB55;
+    --light: #f7f6ff;
+    --medium: #909CC2;
+    --dark: #292626;
+    --transition: all 0.3s ease;
+    --shadow: 0 5px 15px rgba(0,0,0,0.1);
+    --border-radius: 8px;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --primary: #1A6BB3;
+    --secondary: #F7941D;
+    --accent: #FBBC79;
+    --light: #1E1E1E;
+    --medium: #A1ABCD;
+    --dark: #F7F5FB;
+    --shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* General Styles */
+* {
+    margin: 2PX;
+    padding: 2PX;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light);
+    color: var(--dark);
+    transition: var(--transition);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            display: inline-block;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+</style>
+
+<body>
+    <H2 align="center"> WHAT IS WEB Development?</H2>
+    <P>Web development is the process of building and maintaining websites and web applications.<br> It involves design, front-end and back-end development, database management, and testing. Web development requires a range of skills and technologies.</P>
+    <P>
+       <h2> Day-1:</h2><br>
+       <img src="./first day.jpg" height="200"> <br> What is HTML?
+        HTML is a set of instructions that tell a web browser how to display a web page.<br> It's made up of a series of elements, represented by tags (<>), which are used to wrap around content and apply meaning to it.
+        
+        Basic HTML Structure
+        A basic HTML document consists of the following elements:<br>
+    <ol>
+       <li>  !DOCTYPE html: The document type declaration, which tells the browser that this is an HTML document.</li>
+       <li>  html: The root element of the HTML document.</li>
+        <li> head: The head section, which contains metadata about the document.</li>
+            <li>  title: The title of the document, which is displayed in the browser's title bar.</li>
+                <li> body: The body section, which contains the content of the web page.</li>
+        </ol>
+        HTML Tags
+        HTML tags are used to define the structure and content of a web page.<br><br>
+         Here are some common HTML tags:
+        Headings<br>
+         h1: The main heading of the page.<br>
+         h2: A subheading.<br>
+         h3: A sub-subheading.<br>
+        p: A paragraph of text.<br>
+        
+    </P><br>
+    <a href="./homework.html">#first day homework</a><br><br>
+    
+    
+    <hr>
+    
+    <h2> DAY-2:</h2><br>
+    <img src="./day2.jpg" height="200"><br><br>
+
+    On Day 2 of the Fab Lab,  I learned about HTML tags that make a webpage more attractive. Here are some key tags:
+
+<h3># Text Formatting Tags</h3><br>
+1. b: Bold text<br>
+2. i: Italic text<br>
+3. u: Underlined text<br>
+4. font color="color": Text color<br>
+5. font size="size": Text size<br>
+
+<h3># Image and Link Tags</h3><br>
+1. img src="image_url": Add an image<br>
+2. a href="link_url": Create a hyperlink<br>
+
+<h3># List Tags</h3><br>
+1. ul: Unordered list<br>
+2. ol: Ordered list<br>
+3. li: List item<br>
+
+<h3># Table Tags</h3><br>
+1. table: Create a table<br>
+2. tr: Table row<br>
+3. td: Table data<br>
+
+<h3># Semantic Tags</h3><br>
+1. header: Header section<br>
+2. nav: Navigation section<br>
+    3. main: Main content section<br>
+        4. section: Section of related content<br>
+        5. footer: Footer section<br>
+        
+        These tags help create a structured and visually appealing webpage. Keep exploring and practicing to become proficient in HTML!<BR>
+       <a href="./homework-2.html">#SECOND DAY HOMEWORK</a><BR>
+       <br><HR>
+       <h2>DAY-3:</h2><BR>
+       <img src="./day-3.jpg" height="200"></img><br>
+       
+
+        On the third day of Fab Lab, I explored CSS, which is a crucial component of web development. Here's a rundown of what I learned:<br>
+
+        <h3>What is CSS?</h3><br>
+CSS stands for Cascading Style Sheets. It's a styling language used to control the layout and appearance of web pages written in HTML or XML. CSS is used to separate the presentation of a document from its structure, making it easier to maintain and update.<br>
+
+<h3></h3>Use of CSS in HTML<br>
+CSS is used to add visual styles, layout, and user experience to HTML documents.<br> It's used to:<br>
+<ol>
+- Control the layout and positioning of elements
+- Add colors, backgrounds, and textures
+- Define font styles, sizes, and families
+- Create animations and transitions
+- Enhance user experience with responsive design
+</ol>
+<h3>CSS Tags</h3><br>
+Here are some essential CSS tags:
+
+Selectors<br>
+<ol>
+<li>- .class: Selects elements with a specific class</li>
+<li>- #id: Selects an element with a specific id</li>
+<li>- tagname: Selects all elements with a specific tag name</li><br>
+<h3>Properties></h3>
+<li>- color: Sets the text color
+<li>- background-color: Sets the background color</li>
+<li>-font-size: Sets the font size</li>
+<li>- font-family: Sets the font family</li>
+<li>- margin: Sets the margin</li>
+<li>- padding: Sets the padding</li><br>
+
+<h3>common CSS Styles></h3>
+<li>- text-align: Aligns text</li>
+<li>- width: Sets the width of an element</li>
+<li>- height: Sets the height of an element</li>
+<li>- border: Sets the border of an element</li>
+<li>- border-radius: Sets the border radius of an element</li><br>
+
+Some common CSS tags used in HTML include:
+
+<li>- style: Defines an internal stylesheet</li>
+<li>- link: Links to an external stylesheet</li>
+
+By applying CSS styles to HTML elements, you can create visually appealing and user-friendly web pages.
+</ol>
+<a href="./payal.html">DAY-3 HOMEWORK</a><BR>
+
+<br>
+<h2>DAY-4:    </h2>
+<IMG SRC="./day2.jpg" height="200"></img><br>
+    On the fourth day of Fab Lab, you explored the div box model and backgrounds in CSS. Here's a summary:<br>
+
+    <h3># Div Box Model</h3>
+The div box model is a fundamental concept in CSS that describes the structure of an HTML element as a rectangular box.<br>
+ The box model consists of:<br>
+<ol>
+<li>1. Content Area: The area where the element's content is displayed.</li>
+<li>2. Padding: The space between the content area and the border.</li>
+<li>3. Border: The visible outline of the box.</li>
+<li>4. Margin: The space between the box and other elements.</li>
+
+<h3># CSS Background Properties</h3>
+You also learned about CSS background properties, which allow you to add backgrounds to HTML elements. Some common background properties include:
+
+<li>1. background-color: Sets the background color of an element.</li>
+<li>2. background-image: Sets the background image of an element.</li>
+<li>3. background-repeat: Specifies how the background image should be repeated.</li>
+<li>4. background-position: Specifies the position of the background image.</li>
+
+<h3># CSS Link Properties</h3>
+Additionally, you explored CSS link properties, which enable you to style hyperlinks. Some common link properties include:
+
+<li>1. color: Sets the text color of the link.</li>
+<li>2. background-color: Sets the background color of the link.</li>
+<li>3. text-decoration: Specifies the decoration of the link (e.g., underline, none).</li>
+<li>4. hover: Defines the styles for the link when it's hovered over.</li>
+
+By understanding the div box model and CSS background and link properties, you can create more complex and visually appealing web pages.
+</ol>
+<h2>THANK YOU!</h2> 
+
+</body>
+</html>
