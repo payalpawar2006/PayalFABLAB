@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTO CAD Module</title>
+
+  <style>
+    :root {
+      --primary: #d1f93f;
+      --secondary: #F58A07;
+      --accent: #00C49A;
+      --light: #0b0a15;
+      --dark: #222;
+      --transition: all 0.3s ease;
+      --shadow: 0 5px 15px rgba(0,0,0,0.15);
+      --border-radius: 15px;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: var(--light);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 6px solid var(--secondary);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0.8rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-title h1 {
+      display: inline-block;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: var(--secondary);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+
+    /* Card Box Styling */
+    .card {
+      background: #eda4c1;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      border: 2px solid var(--primary);
+    }
+
+    /* Image Styling */
+    .card img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      max-width: 100%;
+      height: auto;
+      transition: var(--transition);
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* List Styling */
+    ul, ol {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Flex Layout for Days */
+    .day-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--primary);
+      color: #f32323;
+      margin-top: 2rem;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section-title">
+      <h1>WHAT IS AUTO CAD</h1>
+    </div>
+
+    <div class="card">
+      <p>
+        During my time in FabLab, I explored Fusion 360, a professional 3D design software developed by Autodesk.Fusion 360 is widely used in engineering, product design, and manufacturing because it combines CAD (Computer-Aided Design), CAM (Computer-Aided Manufacturing), and CAE (Computer-Aided Engineering) in a single platform.
+The main objective of this module was to learn the basics of 3D design step by step, starting from small sketches to building a complete project – in my case, a drone design.
+
+
+      </p>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="day-box">
+      <div class="card">
+        <h2>Day 1</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\9D03333181FB0F6BD495E8B157259880\WhatsApp Image 2025-09-22 at 01.10.26_58d406bf.jpg"height=300 width=300 Intro">
+        <ul>
+          <li>Learn how to download, install, and set up Fusion 360.</li>
+
+ <li> Understand the interface and tools.</li>
+
+<li>Practice creating 2D sketches with constraints and dimensions.</li>
+
+<li>Explore 3D features like extrude, revolve, sweep, loft.</li>
+
+<li>Learn assembly and joints for combining parts.</li>
+
+<li>Work on a final project (Drone design).</li>Fusion 360 is widely used for product design, automotive, aerospace, and robotics.<br>
+
+Skills learned can be applied to 3D printing, CNC machining, and rapid prototyping.<br>
+
+The drone design can be further developed into a real prototype.<br><br><br><br>
+<img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\EA06ED6E977637A81EA9D22B3090E28A\WhatsApp Image 2025-09-22 at 01.26.19_70838021.jpg" height="300" width="300">
+
+.
+          
+        </ul>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="card">
+        <h2>Day 2</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\84D5711E9BF5547001B765878E7B0157\WhatsApp Image 2025-09-22 at 01.10.26_048e266e.jpg"height=300 width=300">
+        <h3>Fusion 360 Workflow</h3>
+        <ul>
+          <li>Software Setup & Introduction
+</li>
+          <li>Learned how to download Fusion 360 from Autodesk’s official site (student license).
+
+.</li>
+          <li>Installed the software and created an Autodesk account.
+</li>
+<li>Explored the Fusion 360 workspace:
+
+
+</li>Toolbar, Browser, Timeline.
+
+Navigation (pan, zoom, orbit).
+
+</li>
+        </ul>
+        <p><strong>create structure:</strong> Practiced making 2D sketches using lines, rectangles, and circles.<br>
+
+Applied constraints (equal, perpendicular, tangent).<br>
+
+Learned extrude tool to convert 2D sketches into 3D models.<br>
+
+Designed simple objects like a cube, cylinder, and nut shape.<br>
+
+</p><br>
+        
+        <ol>
+          <li>Learned revolve, loft, sweep commands.<br>
+
+Created hollow cylinders and bottle-like shapes.<br>
+
+Applied dimensions to make designs accurate.<br>
+
+Practiced modifying tools like fillet and chamfer.<br>Learned how to design multiple parts separately.<br>
+
+Practiced inserting components and using joints (rigid, revolute, slider).<br>
+
+Created a simple assembly project (like connecting wheels to an axle).<br>
+
+
+
+</li>
+         
+        </ol>
+        <h3>Small Project: pikachu</h3>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\0B96D81F0494FDE5428C7AEA243C9157\WhatsApp Image 2025-09-22 at 01.11.59_2c4c38aa.jpg" height="400" width="400" alt="pikachu Project">
+      </div>
+    </div>
+
+    <!-- Day 3 & Day 4 -->
+    <div class="day-box">
+      <div class="card">
+        <h2>Day 3</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\84D5711E9BF5547001B765878E7B0157\WhatsApp Image 2025-09-22 at 01.10.26_2d182aac.jpg" height="400" width="400" alt="Day 3 ">
+        <ul>
+          <li>Started drone design project.<br>
+
+Sketched drone frame and arms.<br>
+
+Used mirror & pattern tools to replicate arms.<br>
+
+Created motor mount points and battery holder space.<br>Assembled all drone parts.<br>
+
+Learned rendering (applying material, color, background).<br>
+
+Finalized the drone model and captured screenshots.<br>
+
+Presentation of final project.<br>2D Sketching (lines, circles, rectangles, constraints).<br>
+
+3D Modeling (extrude, revolve, sweep, loft).<br>
+
+Applying fillet, chamfer, pattern, mirror.<br>
+
+Creating assemblies with different joints.<br>
+
+Rendering for realistic view of the design.<br>
+
+Problem-solving: fixing alignment, errors in sketches.<br>
+
+
+
+
+</li><br><br>
+ 
+      
+<h2>FINAL PROJECT WITH FUSION 360</h2>
+ <video controls="controls" autoplay="autoplay" width="600" height="600"  <source src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\A428BC20CA44F5D446CEE54837B4FD6F\WhatsApp Video 2025-09-22 at 01.33.46_9e51fe64.mp4" type="video/mp4" ></video>
+          
