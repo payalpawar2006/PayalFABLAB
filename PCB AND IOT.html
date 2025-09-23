@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Learning Module</title>
+
+  <style>
+    :root {
+      --primary: #f8141f;
+      --secondary: #F58A07;
+      --accent: #00C49A;
+      --light: #0c0d0d;
+      --dark: #222;
+      --transition: all 0.3s ease;
+      --shadow: 0 5px 15px rgba(0,0,0,0.15);
+      --border-radius: 15px;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: var(--light);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 6px solid var(--secondary);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0.8rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-title h1 {
+      display: inline-block;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: var(--secondary);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+
+    /* Card Box Styling */
+    .card {
+      background: #cbccc7;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      border: 2px solid var(--primary);
+    }
+
+    /* Image Styling */
+    .card img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      max-width: 100%;
+      height: auto;
+      transition: var(--transition);
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Code Box */
+    pre {
+      background: #d4cbcb;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+      border-left: 5px solid var(--primary);
+    }
+
+    /* List Styling */
+    ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Flex Layout for Days */
+    .day-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--primary);
+      color: #1b1a1a;
+      margin-top: 2rem;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section-title">
+      <h1>PCB AND IOT LEARNING MODULE</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="card">
+      <p>
+        <H2>IOT</H2>
+        *IoT (Internet of Things)* is a system of interrelated physical devices that collect and exchange data through the internet. These devices—ranging from sensors and microcontrollers to smart appliances—can sense, process, and communicate information to other devices or cloud platforms.
+
+#### 🔗 How IoT Works:<BR>
+1. *Sensors* detect physical changes (temperature, motion, light, etc.).<BR>
+2. *Microcontrollers* like ESP8266 process the data.<BR>
+3. *Connectivity* (Wi-Fi, Bluetooth) sends data to the cloud.<BR>
+4. *Cloud platforms* store, analyze, and visualize data.<BR>
+5. *User interfaces* allow monitoring and control via apps or dashboards.<BR><BR>
+
+#### 🏠 Real-Life Examples:<BR>
+- Smart home systems (lights, thermostats)<BR>
+- Wearable health monitors<BR>
+- Industrial automation<BR>
+- Smart agriculture (soil moisture sensors)<BR><br><br>
+    <h2>PCB</h2>
+    In the FabLab, I learned about *Printed Circuit Boards (PCB)* and how they form the backbone of electronic devices.<br> 
+    A PCB mechanically supports and electrically connects electronic components using conductive tracks, pads, and other features etched from copper sheets and laminated onto a non-conductive substrate.<br>
+     Instead of messy wiring, PCBs provide a compact, reliable, and professional way to design circuits.
+
+---
+
+
+      </p>
+    </div>
+
+    <!-- Day-wise Learning -->
+    <div class="day-box">
+      <!-- Day 1 -->
+      <div class="card">
+        <h2>Day 1 – Basics of Java</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\A084F26F690DBC23A52E67027693F2B2\WhatsApp Image 2025-09-23 at 02.00.23_2976cc30.jpg" height="400" width="400" alt="Day 1 Java Basics">
+        <ul>
+          <li> Introduction to ESP8266 & Setup*<BR>
+
+#### 🔍 Topics Explored:<BR>
+- IoT architecture and applications<BR>
+- ESP8266 microcontroller:<BR>
+  - Built-in Wi-Fi<BR>
+  - GPIO pins<BR>
+  - Compact and low-power<BR>
+- Comparison with Arduino Uno<BR><BR>
+
+#### 🛠 Activities:<BR>
+- Installed Arduino IDE<BR>
+- Added ESP8266 board support via Board Manager<BR>
+- Connected ESP8266 to PC and verified COM port<BR>
+- Ran basic LED blink test<BR><BR>
+
+#### ✅ Outcomes:<BR>
+- Understood ESP8266’s role in IoT systems<BR>
+- Successfully set up the development environment<BR>
+
+</li>
+       
+        </pre>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="card">
+        <h2>Day 2 – Variables & Operators</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\C2368D3D45705A56E51EC5940E187F8D\WhatsApp Image 2025-09-23 at 02.00.25_b3746e5b.jpg" height="400" width="400" alt="Day 2 Java Workflow">
+        <ul>
+          <li>Arduino Programming & Code Uploading*<BR>
+
+#### 🧠 Concepts Learne<BR>
+- Arduino sketch structure:<BR>
+  cpp<BR>
+  void setup() {<BR>
+    pinMode(LED_BUILTIN, OUTPUT);<BR>
+  }<BR><BR>
+
+  void loop() {<BR>
+    digitalWrite(LED_BUILTIN, HIGH);<BR>
+    delay(1000);<BR>
+    digitalWrite(LED_BUILTIN, LOW);<BR>
+    delay(1000);<BR>
+  }<BR><BR>
+  
+- Serial communication for debugging<BR><BR>
+
+#### 🛠 Activities:<BR>
+- Wrote and uploaded LED blink code<BR>
+- Explored pinMode(), digitalWrite(), delay()<BR>
+- Used Serial Monitor to observe output<BR><BR>
+
+#### ✅ Outcomes:<BR>
+- Gained hands-on coding experience<BR>
+- Learned how to upload and debug sketches<BR>
+    <IMG SRC="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\492114F6915A69AA3DD005AA4233EF51\WhatsApp Image 2025-09-23 at 02.00.37_bf8989ac.jpg" HEIGHT="400" WIDTH="400">
+        <IMG SRC="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\033DAEF61EA8721921FBBEEBB6F87313\WhatsApp Image 2025-09-23 at 02.00.35_fcf84c8e.jpg" HEIGHT="400" WIDTH="400">
+
+---
+</li>
+        </ul>
+        
+
+      </div>
+
+      <!-- Day 3 -->
+      <div class="card">
+        <h2>Day 3 – OOP Introduction</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\43C656628A4A479E108ED86F7A28A010\WhatsApp Image 2025-09-23 at 02.00.33_05890415.jpg" height="400" width="400" alt="Day 3 OOP">
+        <ul>
+          <li>Frequency, PWM & Cloud Concepts*<BR><BR>
+
+#### 📡 Topics Explored:<BR>
+- Frequency and signal modulation<BR>
+- PWM (Pulse Width Modulation) for controlling devices<BR>
+- Basics of cloud platforms (ThingSpeak, Blynk)<BR><BR>
+
+#### 🛠 Activities:<BR>
+- Controlled LED brightness using PWM:<BR>
+  cpp<BR>
+  void setup() {<BR>
+    pinMode(D5, OUTPUT);<BR>
+  }<BR><BR>
+
+  void loop() {<BR>
+    for (int i = 0; i <= 255; i++) {<BR>
+      analogWrite(D5, i);<BR>
+      delay(10);<BR>
+    }<BR>
+    for (int i = 255; i >= 0; i--) {<BR>
+      analogWrite(D5, i);<BR>
+      delay(10);<BR>
+    }<BR>
+  }<BR>
+  
+- Discussed HTTP/MQTT protocols for data transmission
+</li>
+        </ul>
+        <IMG SRC="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\90415F9B8D0FE2DA891B58A2DAB18F8D\WhatsApp Image 2025-09-23 at 02.00.37_de5a53d6.jpg" HEIGHT="400" WIDTH="400">
+        
+      </div>
+
+      <!-- Day 4 -->
+      <div class="card">
+        <h2>Day 4 – PCB DESIGN</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\B0490B85E92B64DBB5DB76BF8FCA6A82\WhatsApp Image 2025-09-23 at 02.00.38_e7eb5a79.jpg" height="400" width="400" alt="Day 4 Java Control">
+        <ul>
+          <li> Understanding PCB and Introduction to KiCad*<BR>
+
+* Learned the basics of what a PCB is and why it is used in electronics.<BR>
+* Explored different types of PCBs such as single-layer, double-layer, and multi-layer boards.<BR>
+* Understood the advantages of PCBs over breadboards, like durability, small size, and mass production.<BR>
+* Introduction to *KiCad*, an open-source software for PCB design.<BR>
+* Installed KiCad and explored its different tools like schematic editor, PCB editor, and 3D viewer.<BR>
+.</li>
+        </ul>
+        
+      </div>
+
+      <!-- Day 5 -->
+      <div class="card">
+        <h2>Day 5 – Arrays & Functions</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\217B4C71837FAC172FABEBFC299F755B\WhatsApp Image 2025-09-23 at 02.00.38_4a46f478.jpg" height="400" width="400" alt="Day 5 Arrays">
+        <ul>
+          <li> Designing Schematic in KiCad*<BR>
+
+* Learned the *step-by-step process* to create a circuit schematic.<BR><BR>
+
+  * Opened the schematic editor and placed symbols of components (resistors, capacitors, ICs, connectors, etc.).<BR>
+  * Learned how to connect components with wires to form a complete circuit.<BR>
+* Understood the importance of *electrical rules check (ERC)* to identify missing connections or errors.<BR>
+* Learned how to create a project file and save schematics in KiCad for further use.<BR>
+
+</li>
+        </ul>
+        
+      </div>
+
+      <!-- Day 6 -->
+      <div class="card">
+        <h2>Day 6 – Exception & File Handling</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\94F4EDE62112B790C91D5E64FDB09CB8\WhatsApp Image 2025-09-23 at 02.00.39_1c669f2e.jpg" height="400" width="400" alt="Day 6 File Handling">
+        <ul>
+          <li>* Learned how to *assign footprints* to components (example: resistor → 0805 package, IC → DIP/SMD package).<BR>
+* Transferred the schematic design to the PCB layout editor.<BR>
+* Placed all components on the board and arranged them logically.<BR>
+* Learned how to create *copper tracks* to connect components properly.<BR>
+* Added a *ground plane* to improve circuit performance.<BR>
+* Explored the *3D Viewer* in KiCad to visualize how the final PCB will look in real life.<BR>
+* Learned how to generate *Gerber files* which are used in PCB manufacturing.<BR>
+
+
+  
+
+</li>
+        </ul>
+       
+      </div>
+    </div>
+
+    <!-- Final Project -->
+    <div class="card">
+      <h2>Final Project</h2>
+      <H2>IOT AND PCB</H2>
+      <video controls="controls" autoplay="autoplay" width="600" height="600"  <source src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\227E072D131BA77451D8F27AB9AFDFB7\WhatsApp Video 2025-09-23 at 02.00.36_91cd7edc.mp4" type="video/mp4" ></video>
+     <IMG SRC="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\AB81265D898EF7F38A3E95FC98C2A669\WhatsApp Image 2025-09-23 at 02.22.54_39f1aeaa.jpg" HEIGH="500" WIDTH="500">
+<IMG SRC="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\90248D0A98105FA534CF2B0696DDD12F\WhatsApp Image 2025-09-23 at 02.24.09_a984bf58.jpg"width="500" height="500"
+  <footer>
+    © 2025 PCB  AND IOT MODULE</footer>
