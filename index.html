@@ -1113,6 +1113,18 @@ footer h2 {
                   document.body.scrollTop = 0;
                   document.documentElement.scrollTop = 0;
                 }
+                const themeToggle = document.getElementById("themeToggle");
+    const htmlElement = document.documentElement;
+
+    themeToggle.addEventListener("click", () => {
+        if (htmlElement.getAttribute("data-theme") === "dark") {
+            htmlElement.removeAttribute("data-theme"); // back to light
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>'; // change icon
+        } else {
+            htmlElement.setAttribute("data-theme", "dark");
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // change icon
+        }
+    });
                 </script>
         
                 </body>
@@ -1122,6 +1134,7 @@ footer h2 {
          
 
              
+
 
 
 
