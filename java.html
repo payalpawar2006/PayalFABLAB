@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Learning Module</title>
+
+  <style>
+    :root {
+      --primary: #3d56e9;
+      --secondary: #F58A07;
+      --accent: #00C49A;
+      --light: #0e0e0e;
+      --dark: #222;
+      --transition: all 0.3s ease;
+      --shadow: 0 5px 15px rgba(0,0,0,0.15);
+      --border-radius: 15px;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: var(--light);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 6px solid var(--secondary);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 0.8rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-title h1 {
+      display: inline-block;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: var(--secondary);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+
+    /* Card Box Styling */
+    .card {
+      background: #f8f5f5;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      border: 2px solid var(--primary);
+    }
+
+    /* Image Styling */
+    .card img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      max-width: 100%;
+      height: auto;
+      transition: var(--transition);
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Code Box */
+    pre {
+      background: #d4cbcb;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+      border-left: 5px solid var(--primary);
+    }
+
+    /* List Styling */
+    ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Flex Layout for Days */
+    .day-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--primary);
+      color: #1b1a1a;
+      margin-top: 2rem;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section-title">
+      <h1>JAVA LEARNING MODULE</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="card">
+      <p>
+        Java is a high-level, object-oriented programming language designed for platform independence. 
+        The principle <strong>“Write Once, Run Anywhere (WORA)”</strong> makes Java one of the most popular 
+        programming languages worldwide.  
+        <br><br>
+        In this module, I learned the fundamentals of Java step by step, from basics to advanced OOP concepts, 
+        and practiced small projects to strengthen my programming logic.
+      </p>
+    </div>
+
+    <!-- Day-wise Learning -->
+    <div class="day-box">
+      <!-- Day 1 -->
+      <div class="card">
+        <h2>Day 1 – Basics of Java</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\D2A452EDFF079CA6980EDCF54CC49945\WhatsApp Image 2025-09-22 at 23.13.25_4fdb2c50.jpg" height="400" width="400" alt="Day 1 Java Basics">
+        <ul>
+          <li>Introduction to Java and its history.</li>
+          <li>Understood JVM, JRE, and JDK.</li>
+          <li>Installed JDK and wrote the first program.</li>
+          <li>Explored structure of a Java program.</li>
+          <li>Learned about comments (single-line, multi-line, documentation).</li>
+          <li>Practiced compilation and execution from terminal.</li>
+        </ul>
+        <pre>
+class Hello {
+  public static void main(String[] args) {
+    // Single line comment
+    /* Multi-line comment */
+    /** Documentation comment */
+    System.out.println("Hello, World!");
+  }
+}
+        </pre>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="card">
+        <h2>Day 2 – Variables & Operators</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\853BB47A93581EAD37B1BCD749D34787\WhatsApp Image 2025-09-22 at 23.13.19_33d614fd.jpg" height="400" width="400" alt="Day 2 Java Workflow">
+        <ul>
+          <li>Learned primitive & non-primitive data types.</li>
+          <li>Explored operators: arithmetic, relational, logical.</li>
+          <li>Practiced small programs like a calculator.</li>
+          <li>Understood type casting and type promotion.</li>
+          <li>Learned about increment (++) and decrement (--).</li>
+          <li>Explored assignment and bitwise operators.</li>
+        </ul>
+        <pre>
+class Calculator {
+  public static void main(String[] args) {
+    int a = 12, b = 5;
+    System.out.println("Addition = " + (a+b));
+    System.out.println("Division = " + (a/b));
+    System.out.println("Remainder = " + (a%b));
+    System.out.println("Bitwise AND = " + (a & b));
+  }
+}
+        </pre>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="card">
+        <h2>Day 3 – OOP Introduction</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\D02E9BDC27A894E882FA0C9055C99722\WhatsApp Image 2025-09-22 at 23.13.18_96b7756d.jpg" height="400" width="400" alt="Day 3 OOP">
+        <ul>
+          <li>Started with Object-Oriented Programming.</li>
+          <li>Learned about classes & objects.</li>
+          <li>Designed small practice programs.</li>
+          <li>Explored constructors and object creation.</li>
+          <li>Understood instance variables vs local variables.</li>
+          <li>Wrote a program to create multiple objects of a class.</li>
+        </ul>
+        <pre>
+class Student {
+  String name;
+  int age;
+  
+  Student(String n, int a) {
+    name = n;
+    age = a;
+  }
+
+  void display() {
+    System.out.println(name + " is " + age + " years old.");
+  }
+
+  public static void main(String[] args) {
+    Student s1 = new Student("Amit", 20);
+    Student s2 = new Student("Payal", 22);
+    s1.display();
+    s2.display();
+  }
+}
+        </pre>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="card">
+        <h2>Day 4 – Control Statements</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\E84401AD27C4CFB9815776EB9432FF17\WhatsApp Image 2025-09-22 at 23.13.10_1b5e06a1.jpg" height="400" width="400" alt="Day 4 Java Control">
+        <ul>
+          <li>Explored if-else, switch-case.</li>
+          <li>Practiced loops: for, while, do-while.</li>
+          <li>Applied decision-making in problem-solving.</li>
+          <li>Learned nested loops with star patterns.</li>
+          <li>Practiced break and continue statements.</li>
+        </ul>
+        <pre>
+class Pattern {
+  public static void main(String[] args) {
+    for(int i=1; i<=5; i++) {
+      for(int j=1; j<=i; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
+}
+        </pre>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="card">
+        <h2>Day 5 – Arrays & Functions</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\D02E9BDC27A894E882FA0C9055C99722\WhatsApp Image 2025-09-22 at 23.13.18_06a41c54.jpg" height="400" width="400" alt="Day 5 Arrays">
+        <ul>
+          <li>Learned 1D and 2D arrays.</li>
+          <li>Explored defining & calling functions.</li>
+          <li>Wrote programs on searching and sorting.</li>
+          <li>Understood pass by value in functions.</li>
+          <li>Practiced linear search and bubble sort.</li>
+          <li>Explored recursion with factorial program.</li>
+        </ul>
+        <pre>
+class SearchArray {
+  public static void main(String[] args) {
+    int arr[] = {10, 20, 30, 40, 50};
+    int key = 30, found = -1;
+    for(int i=0; i<arr.length; i++) {
+      if(arr[i] == key) {
+        found = i;
+        break;
+      }
+    }
+    System.out.println((found != -1) ? "Found at index " + found : "Not Found");
+  }
+}
+        </pre>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="card">
+        <h2>Day 6 – Exception & File Handling</h2>
+        <img src="c:\Users\Shivrudra\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\E84401AD27C4CFB9815776EB9432FF17\WhatsApp Image 2025-09-22 at 23.13.10_1b5e06a1.jpg" height="400" width="400" alt="Day 6 File Handling">
+        <ul>
+          <li>Learned try-catch-finally block.</li>
+          <li>Practiced checked & unchecked exceptions.</li>
+          <li>Explored file input/output in Java.</li>
+          <li>Learned how to throw and handle exceptions.</li>
+          <li>Worked with FileReader, FileWriter classes.</li>
+          <li>Practiced writing and reading text files.</li>
+        </ul>
+        <pre>
+import java.io.*;
+class FileDemo {
+  public static void main(String[] args) {
+    try {
+      FileWriter fw = new FileWriter("data.txt");
+      fw.write("Hello Java File Handling");
+      fw.close();
+
+      BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+      String line = br.readLine();
+      System.out.println("File Content: " + line);
+      br.close();
+    } catch(Exception e) {
+      System.out.println("Error: " + e);
+    }
+  }
+}
+        </pre>
+      </div>
+    </div>
+
+    <!-- Final Project -->
+    <div class="card">
+      <h2>Final Project</h2>
+      <p>
+        Designed a <strong>Vehicle Management System</strong> using OOP concepts.  
+        Implemented classes for Car, Bike, and Truck with common and specific attributes.  
+        Practiced file handling to save and retrieve data.
+        Problem Statement: Vehicle Management System<br>
+
+Design and implement a Java application that demonstrates Object-Oriented Programming concepts up to OOPs (without advanced features like databases or multithreading).<br><br>
+
+Requirements:<br>
+The system should manage different types of vehicles such as Car, Bike, and Truck.<br>
+
+All vehicles share common attributes:<br>
+Brand<br>
+Model<br>
+Price<br>
+
+Each type of vehicle has additional attributes:<br>
+Car → Number of doors<br>
+Bike → Type of bike (e.g., Sports, Cruiser)<br>
+Truck → Load capacity (in tons)<br><br>
+
+Use an abstract class or interface for the base Vehicle definition.<br>
+Implement inheritance where Car, Bike, and Truck extend Vehicle.<br>
+Use method overriding to display vehicle details differently for each type.<br>
+Use encapsulation to ensure proper data hiding (private fields with getters/setters).<br>
+Demonstrate polymorphism by storing different types of vehicles in a single collection (e.g., array or list) and displaying their details through a loop.<br><br>
+
+The program should be menu-driven (optional for extra challenge):<br>
+Add a vehicle<br>
+View all vehicles<br>
+Exit<br>import java.util.*;<BR><BR>
+
+// Abstract Class Vehicle<BR>
+abstract class Vehicle {<BR>
+    private String brand;<BR>
+    private String model;<BR>
+    private double price;<BR><BR>
+
+    // Constructor<BR>
+    public Vehicle(String brand, String model, double price) {<BR>
+        this.brand = brand;<BR>
+        this.model = model;<BR>
+        this.price = price;<BR>
+    }<BR>
+
+    // Getters and Setters (Encapsulation)<BR>
+    public String getBrand() { return brand; }<BR>
+    public void setBrand(String brand) { this.brand = brand; }<BR>
+
+    public String getModel() { return model; }<BR>
+    public void setModel(String model) { this.model = model; }<BR>
+
+    public double getPrice() { return price; }<BR>
+    public void setPrice(double price) { this.price = price; }<BR>
+
+    // Abstract method (Polymorphism)<BR>
+    public abstract void displayDetails();<BR>
+}<BR>
+
+// Car Class<BR>
+class Car extends Vehicle {<BR>
+    private int numberOfDoors;<BR><BR>
+
+    public Car(String brand, String model, double price, int numberOfDoors) {<BR>
+        super(brand, model, price);<BR>
+        this.numberOfDoors = numberOfDoors;<BR>
+    }<BR>
+
+    @Override<BR>
+    public void displayDetails() {<BR>
+        System.out.println("Car → Brand: " + getBrand() + ", Model: " + getModel() +<BR>
+                ", Price: " + getPrice() + ", Doors: " + numberOfDoors);<BR>
+    }<BR>
+}<BR><BR>
+
+// Bike Class<BR>
+class Bike extends Vehicle {<BR>
+    private String type;<BR><BR>
+
+    public Bike(String brand, String model, double price, String type) {<BR>
+        super(brand, model, price);<BR>
+        this.type = type;<BR>
+    }<BR>
+<BR>
+    @Override<BR>
+    public void displayDetails() {<BR>
+        System.out.println("Bike → Brand: " + getBrand() + ", Model: " + getModel() +<BR>
+                ", Price: " + getPrice() + ", Type: " + type);<BR>
+    }<BR>
+}<BR><BR>
+
+// Truck Class<BR>
+class Truck extends Vehicle {<BR>
+    private double loadCapacity;<BR><BR>
+
+    public Truck(String brand, String model, double price, double loadCapacity) {<BR>
+        super(brand, model, price);<BR>
+        this.loadCapacity = loadCapacity;<BR>
+    }<BR>
+
+    @Override<BR>
+    public void displayDetails() {<BR>
+        System.out.println("Truck → Brand: " + getBrand() + ", Model: " + getModel() +<BR>
+                ", Price: " + getPrice() + ", Load Capacity: " + loadCapacity + " tons");<BR>
+    }<BR>
+}<BR>
+
+<BR>
+// Main Clas<BR>
+public class VehicleManagementSystem {<BR>
+    public static void main(String[] args) {<BR>
+        Scanner sc = new Scanner(System.in);<BR>
+        List<Vehicle> vehicles = new ArrayList<>();<BR>
+        int choice;<BR><BR>
+
+        do {<BR>
+            System.out.println("\n==============================");<BR>
+            System.out.println("   Vehicle Management System");<BR>
+            System.out.println("==============================");<BR>
+            System.out.println("1. Add Vehicle");<BR>
+            System.out.println("2. View All Vehicles");<BR>
+            System.out.println("3. Exit");<BR>
+            System.out.print("Enter your choice: ");<BR>
+            choice = sc.nextInt();<BR>
+            sc.nextLine(); // Consume newline<BR><BR>
+
+            switch (choice) {<BR><BR>
+                case:<BR>
+                    System.out.println("\nSelect Vehicle Type:");<BR>
+                    System.out.println("1. Car");<BR>
+                    System.out.println("2. Bike");<BR>
+                    System.out.println("3. Truck");<BR>
+                    System.out.print("Enter your choice: ");<BR>
+                    int type = sc.nextInt();<BR>
+                    sc.nextLine();<BR>
+
+                    System.out.print("Enter Brand: ");<BR>
+                    String brand = sc.nextLine();<BR>
+                    System.out.print("Enter Model: ");<BR>
+                    String model = sc.nextLine();<BR>
+                    System.out.print("Enter Price: ");<BR>
+                    double price = sc.nextDouble();<BR>
+                    sc.nextLine();<BR><BR>
+
+                    if (type == 1) {<BR>
+                        System.out.print("Enter Number of Doors: ");<BR>
+                        int doors = sc.nextInt();<BR>
+                        sc.nextLine();<BR>
+                        vehicles.add(new Car(brand, model, price, doors));<BR>
+                        System.out.println("Car added successfully!");<BR>
+                    } else if (type == 2) {<BR>
+                        System.out.print("Enter Type of Bike (Sports/Cruiser): ");<BR>
+                        String bikeType = sc.nextLine();<BR>
+                        vehicles.add(new Bike(brand, model, price, bikeType));<BR>
+                        System.out.println("Bike added successfully!");<BR>
+                    } else if (type == 3) {<BR>
+                        System.out.print("Enter Load Capacity (in tons): ");<BR>
+                        double capacity = sc.nextDouble();<BR>
+                        sc.nextLine();<BR>
+                        vehicles.add(new Truck(brand, model, price, capacity));<BR>
+                        System.out.println("Truck added successfully!");<BR>
+                    } else {<BR>
+                        System.out.println("Invalid vehicle type!");<BR>
+                    }<BR>
+                    break;<BR><BR>
+
+                case 2:<BR>
+                    System.out.println("\n--- List of Vehicles ---");<BR>
+                    if (vehicles.isEmpty()) {<BR>
+                        System.out.println("No vehicles found.");<BR>
+                    } else {<BR>
+                        for (Vehicle v : vehicles) {<BR>
+                            v.displayDetails(); // Polymorphism in action<BR>
+                        }<BR>
+                    }<BR>
+                    System.out.println("--------------------------");<BR><BR>
+
+                    break;<BR>
+                    <h2>OUTPUT</h2><BR>
+                    ==============================<BR>
+   Vehicle Management System<BR>
+==============================<BR>
+1. Add Vehicle<BR>
+2. View All Vehicles<BR>
+3. Exit<BR>
+Enter your choice: 1<BR>
+
+Select Vehicle Type:<BR>
+1. Car<BR>
+2. Bike<BR>
+3. Truck<BR>
+Enter your choice: 1<BR><BR>
+
+Enter Brand: Toyota<BR>
+Enter Model: Corolla<BR>
+Enter Price: 1500000<BR>
+Enter Number of Doors: 4<BR>
+Car added successfully!<BR>
+
+==============================<BR>
+   Vehicle Management System<BR>
+==============================<BR>
+1. Add Vehicle<BR>
+2. View All Vehicles<BR>
+3. Exit<BR>
+Enter your choice: 1<BR>
+
+Select Vehicle Type:<BR>
+1. Car<BR>
+2. Bike<BR>
+3. Truck<BR>
+Enter your choice: 2<BR>
+
+Enter Brand: Yamaha<BR>
+Enter Model: R15<BR>
+Enter Price: 180000<BR>
+Enter Type of Bike (Sports/Cruiser): Sports<BR>
+Bike added successfully!<BR>
+
+==============================<BR>
+   Vehicle Management System<BR>
+==============================<BR>
+1. Add Vehicle<BR>
+2. View All Vehicles<BR>
+3. Exit<BR>
+Enter your choice: 1<BR><BR>
+
+Select Vehicle Type:<BR>
+1. Car<BR>
+2. Bike<BR>
+3. Truck<BR>
+Enter your choice: 3<BR><BR>
+
+Enter Brand: Tata<BR>
+Enter Model: Ace<BR>
+Enter Price: 500000<BR>
+Enter Load Capacity (in tons): 2<BR>
+Truck added successfully!<BR>
+
+==============================<BR>
+   Vehicle Management System<BR>
+==============================<BR>
+1. Add Vehicle<BR>
+2. View All Vehicles<BR>
+3. Exit<BR>
+Enter your choice: 2<BR><BR>
+
+--- List of Vehicles ---<BR>
+Car → Brand: Toyota, Model: Corolla, Price: 1500000, Doors: 4<BR>
+Bike → Brand: Yamaha, Model: R15, Price: 180000, Type: Sports<BR>
+Truck → Brand: Tata, Model: Ace, Price: 500000, Load Capacity: 2 tons<BR>
+--------------------------
+
+==============================<BR>
+   Vehicle Management System<BR>
+==============================<BR>
+1. Add Vehicle<BR>
+2. View All Vehicles<BR>
+3. Exit<BR>
+Enter your choice: 3<BR><BR>
+
+Exiting... Thank you!<BR>
+
+
+      </p>
+      
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Java Learning D
